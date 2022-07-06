@@ -40,16 +40,44 @@ Du behöver sedan ändra ett saker på varje sida.
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href="css/agency.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/button orange.css" rel="stylesheet">
     <link href="css/box.css" rel="stylesheet">
     <link href="css/speech bubble.css" rel="stylesheet">
-
-    <style>
+    <link href="css/black.css" rel="stylesheet">
+       <style>
       .responsive {
         max-width: 100%;
         height: auto;
       }
-      </style>
+
+</style>
+<h2 style="background-color:black;color:white">
+Black background-color and white text color
+</h2>
+
+body 
+{  background-color: black;
+  font-family: cursive;
+}
+.glow {
+  font-size: 50px;
+  color: #000000;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ea7600, 0 0 40px #ea7600, 0 0 50px#ea7600, 0 0 60px #ea7600, 0 0 70px #ea7600;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff5100, 0 0 40px #ff5100, 0 0 50px #ff5100, 0 0 60px #ff5100, 0 0 70px #ff5100, 0 0 80px#ff5100;
+  }
+}
+</style>
   </head>
 
 
@@ -57,7 +85,7 @@ Du behöver sedan ändra ett saker på varje sida.
   <!-- Denna del av koden berättar vad menyn skall innehålla -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Biblioteken i Västernorrland</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Biblioteken i Örnsköldsvik</a>
 
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         
@@ -76,8 +104,11 @@ Du behöver sedan ändra ett saker på varje sida.
         </div>
       </div>
     </nav>
-
-    <!--SLUT PÅ DELEN SOM BESKRIVER MENYN LÄNGST UPP-->
+    <div class="pyro">
+      <div class="before"></div>
+      <div class="after"></div>
+  </div>   
+     <!--SLUT PÅ DELEN SOM BESKRIVER MENYN LÄNGST UPP-->
 
     <!-- DELEN SOM BESKRIVER FÖRSTA UPPDRAGET STARTAR -->
     <section id="services">
@@ -88,41 +119,15 @@ Du behöver sedan ändra ett saker på varje sida.
             <h2 class="section-heading text-uppercase"></h2>
 
             <!--Bakgrunds information-->
-            <h3></h3>
-
-            <!--Eventuellt återkoppling gällande det tidigare uppdraget-->
-
-            <!--Bakgrunds information-->
-            <div class="speech-bubble">
-              <font color=”#000000”><B>Du svarade rätt!</B><BR>
-              <b>Barnkonventionen</b> består av 54 artiklar som beskriver varje barns rättigheter. De viktigaste artiklarna är nummer 2, 3, 6 och 12 och kan enkelt beskrivas så här:<p>
-        <BR>
-       <B> Alla barn ska ha lika värde<BR>
-        <BR>
-        Det ska alltid tas hänsyn till barnets bästa<BR>
-        <br>
-      Alla barn har rätt att vara med och bestämma i de frågor som rör dem.<BR>
-      <BR>
-      Alla barn har rätt till liv och utveckling<BR></B>
-      </DIV>
-            <img src="./img/barnkonventionen1.jpg" alt="barns som leker med klossar" class="responsive" width="300" height="300">
-            <br>
-            <br>  
-            <!--Eventuellt återkoppling gällande det tidigare uppdraget-->
-            <center><div class="b"></div></center>
-            <br>
-            <br>
-            <!--Uppgiftens nummer-->
-            <h3></h3>
-            <!--Vilket är uppdraget?-->
+            <img src="./img/fireworks3.gif" loop=infinite alt="Fyrverkerier" class="responsive" width="600" height="400">
             <div class="speech-bubble">
               <font color=”#222222”>
-                <h3>Bra jobbat!</h3>  
-                Nu har du klarat alla uppdrag.<br><br>       
-              <a href="https://arkenbiblioteket.github.io/ornskoldsviks-teknikjakt/klar.html?" class="myButton"> Klicka här för att gå vidare!</a>
-              </div></font>
-                 
-            <!--Ibland kanske du vill lägga till en bild i beskrivningen.
+              <h1 class="glow">GRATTIS!</h1> 
+              <br>
+                Hoppas du har lärt dig något <BR>
+                nytt om valet och demokrati.<br><br>
+      
+                          <!--Ibland kanske du vill lägga till en bild i beskrivningen.
             I så fall läger du in bilden i katalogen img.
             Du lägger sedan in följande kod för att berätta att en bild skall visas.
             Men ersätter bildensnamn med det namn din bild och det filformat din bild har.
@@ -163,7 +168,7 @@ Du behöver sedan ändra ett saker på varje sida.
       så många uppdrag vi vill.
       -->
             <form id="contactForm" name="sentMessage" novalidate="novalidate" 
-            action="klar1.html" 
+            action="5.html" 
             onsubmit="return validateForm()" autocomplete="off">
               <div class="row">
                 <div class="col-md-12">
